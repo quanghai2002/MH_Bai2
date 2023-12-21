@@ -1,0 +1,14 @@
+{
+  "name": "bai2",
+  "version": "1.0.0",
+  "description": "quang hai bai 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass css/main.scss css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
