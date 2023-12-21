@@ -1,5 +1,144 @@
-.test {
-  color: blue;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+}
+
+#root {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 966px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+  background-color: white;
+}
+.header .header-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.header .header-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .header-content .header-search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.header .header-content .header-search .header-search-label {
+  cursor: pointer;
+}
+.header .header-content .header-search .input-search {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  padding: 1px 2px;
+  border: none;
+  outline: none;
+  caret-color: rgb(45, 28, 200);
+}
+.header .header-content .header-nav .header-nav-ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 32px;
+}
+.header .header-content .header-nav .header-nav-ul .header-nav-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-content .header-nav .header-nav-ul .header-nav-li .header-nav-link {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.header .header-content .header-nav .header-nav-ul .header-nav-li-social {
+  transition: all 0.2s linear;
+}
+.header .header-content .header-nav .header-nav-ul .header-nav-li-social:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.header .header-content .header-nav .header-nav-ul .header-nav-switch-content {
+  position: relative;
+}
+.header .header-content .header-nav .header-nav-ul .header-nav-switch-content:hover::after {
+  width: 100%;
+}
+.header .header-content .header-nav .header-nav-ul .header-nav-switch-content::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 4px;
+  background-color: rgb(106, 43, 243);
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+}
+.header .header-content .header-nav .header-nav-ul .header-nav-switch-content-active a {
+  font-weight: 700 !important;
+  color: rgb(106, 43, 243) !important;
+}
+.header .header-content .header-nav .header-nav-ul .header-nav-switch-content-active::after {
+  width: 100%;
+}
+
+.main .container-hompage .banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(251, 251, 251);
+  gap: 80px;
+  padding: 70.8px 0;
+}
+.main .container-hompage .banner .baner-header {
+  max-width: 354px;
+}
+.main .container-hompage .banner .baner-header .wrap-title {
+  position: relative;
+  margin-bottom: 16px;
+}
+.main .container-hompage .banner .baner-header .wrap-title .title {
+  font-size: 6rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  line-height: 7.2rem;
+}
+.main .container-hompage .banner .baner-header .wrap-title .icon-coffee {
+  position: absolute;
+  right: 19%;
+  bottom: -6%;
+}
+.main .container-hompage .banner .baner-header .desctiption {
+  font-size: 3rem;
+  font-weight: 400;
+  color: rgb(74, 85, 104);
+  line-height: 3.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
